@@ -40,6 +40,7 @@
 
 // 	fmt.Println("Response Body:", string(body))
 // }
+
 package main
 
 import (
@@ -90,6 +91,11 @@ func main() {
 
 		fmt.Println("Response Body:", string(body))
 	}
+
+	if len(authorizations) == 1 && authorizations[0] == authorizationEnv {
+		fmt.Println("只找到一个Authorization:", authorizations[0])
+	}
 }
+
 
 
