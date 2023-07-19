@@ -55,7 +55,7 @@ func main() {
 	url := "https://api.xiabb.chat/chatapi/marketing/signin"
 
 	authorizationEnv := os.Getenv("AUTHORIZATIONS")
-
+	fmt.Println("authorizationEnv:", authorizationEnv)
 	authorizations := strings.Split(authorizationEnv, ",")
 
 	client := &http.Client{}
