@@ -15,7 +15,7 @@ func main() {
 		fmt.Println("Failed to create request:", err)
 		return
 	}
-	Authorization := os.Getenv("Authorization")
+	Authorization := os.Getenv("AUTHORIZATION")
 	if Authorization == "" {
 		fmt.Println("Authorization不存在，请检查是否添加")
 		return
