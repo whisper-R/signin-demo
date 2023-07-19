@@ -38,7 +38,8 @@
 // 		return
 // 	}
 
-
+// 	fmt.Println("Response Body:", string(body))
+// }
 package main
 
 import (
@@ -91,5 +92,4 @@ func main() {
 	}
 }
 
-// 	fmt.Println("Response Body:", string(body))
-// }
+
