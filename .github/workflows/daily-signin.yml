@@ -15,10 +15,8 @@ jobs:
         with:
           go-version: '1.20'
 
-      - name: Build
-        run: go build -v ./...
-
-      - name: Test
+      - name: GPTAI 自动签到
         env:
           AUTHORIZATION: ${{ secrets.AUTHORIZATION }}
-        run: go test -v ./...
+        run: go run main.go
+
