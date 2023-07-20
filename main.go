@@ -57,7 +57,7 @@ func main() {
 
 	authorizations := []string{
 		os.Getenv("AUTHORIZATION"),
-		os.Getenv("AUTHORIZATION_2"),
+		os.Getenv("AUTHORIZATION2"),
 	}
 
 	for i, authorization := range authorizations {
