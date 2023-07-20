@@ -56,7 +56,7 @@ func main() {
 	url := "https://api.xiabb.chat/chatapi/marketing/signin"
 
 	authorizations := []string{
-		os.Getenv("AUTHORIZATION_1"),
+		os.Getenv("AUTHORIZATION"),
 		os.Getenv("AUTHORIZATION_2"),
 	}
 
