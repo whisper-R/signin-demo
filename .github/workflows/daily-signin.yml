@@ -21,4 +21,5 @@ jobs:
       - name: GPTAI 自动签到
         env:
           AUTHORIZATION: ${{ secrets.AUTHORIZATION }}
+          AUTHORIZATION2: ${{ secrets.AUTHORIZATION2 }}
         run: go run main.go
