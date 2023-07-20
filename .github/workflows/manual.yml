@@ -24,7 +24,7 @@ jobs:
       
       - name: Build and Run
         env:
-          AUTHORIZATION: ${{ secrets.AUTHORIZATION }},
+          AUTHORIZATION: ${{ secrets.AUTHORIZATION }}
           AUTHORIZATION2: ${{ secrets.AUTHORIZATION2 }}
         run: |
           go build -o myapp main.go
